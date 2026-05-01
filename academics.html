@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St.Janan Luwum S.S-Kabalagala</title>
+    <link rel="icon" href="C:\Users\AbdulMajidu\Desktop\College-Website-main/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+      </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="C:\Users\AbdulMajidu\Desktop\College-Website-main/college_logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="academics.html">ACADEMICS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        
+      </nav>
+      <h1>Academics</h1>
+    </section>
+
+    <!-- ------------courses------------- -->
+  <section class="course course-admissions">
+  <div class="course-header">
+    <h1>Apply Now</h1>
+    <p class="subtitle">Admissions are open for 2026 intake</p>
+  </div>
+
+  <div class="course-intro">
+    <p>
+      The Academic Program at Janan Schools is the cornerstone of our educational philosophy.
+      It delivers a balanced, inclusive, and dynamic learning experience that builds intellectual growth,
+      character formation, and lifelong curiosity.
+      <br><br>
+      Following the Uganda National Curriculum, enhanced with creative learning, project-based activities,
+      and moral education, we nurture learners from Early Childhood Development to Advanced Level with strong
+      literacy, numeracy, analytical skills, discipline, confidence, and leadership.
+    </p>
+  </div>
+
+  <div class="course-grid">
+    
+    <div class="course-card">
+      <div class="badge">A-LEVEL</div>
+      <h3>UACE Program</h3>
+      <p>
+        Focused on academic excellence through structured teaching, continuous assessment,
+        research, practical learning, and exam readiness. Students gain both high grades and
+        real-world skills for university and careers.
+      </p>
+      <a href="https://near.tl/sm/qi5ErAbAf/viewform" target="_blank" class="apply-btn">
+        Apply for A-Level
+      </a>
+    </div>
+
+    <div class="course-card">
+      <div class="badge">O-LEVEL</div>
+      <h3>UCE Program</h3>
+      <p>
+        A strong academic pathway in Sciences and Arts, integrating ICT, research,
+        innovation, competency-based learning, and critical thinking to prepare students
+        for advanced studies.
+      </p>
+      <a href="https://near.tl/sm/qi5ErAbAf/viewform" target="_blank" class="apply-btn">
+        Apply for O-Level
+      </a>
+    </div>
+
+    <div class="course-card">
+      <div class="badge">PRIMARY</div>
+      <h3>Primary Section</h3>
+      <p>
+        Builds strong foundations through Early Childhood Development and Primary Education,
+        focusing on literacy, numeracy, creativity, social skills, and core subjects.
+      </p>
+      <a href="https://near.tl/sm/qi5ErAbAf/viewform" target="_blank" class="apply-btn">
+        Apply for Primary
+      </a>
+    </div>
+
+  </div>
+</section>
+<script>
+  const cards = document.querySelectorAll('.course-col');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+</script>
+
+           <!-- ----------footer---------------- -->
+
+    <footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- ABOUT SECTION -->
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>
+        Janan Schools is a privately owned family of institutions, comprising two primary schools and two secondary schools, founded in 2003.
+      </p>
+      <p>
+        Our schools draw inspiration from a strong religious foundation and are proudly named in honor of Archbishop Janani Jakaliya Luwum,
+        who served as Archbishop of the Church of Uganda from 1974 to 1977.
+      </p>
+    </div>
+
+    <!-- NAVIGATION LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    <p>© 2026 St. Janan Luwum Secondary School - Kabalagala. All Rights Reserved.</p>
+  </div>
+
+</footer>
+    
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

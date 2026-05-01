@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St.Janan Luwum S.S-Kabalagala</title>
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+      </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="college_logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="academics.html">ACADEMICS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        
+      </nav>
+      <h1>Gallery</h1>
+    </section>
+
+    <!-- ----------gallery page---------------- -->
+
+    <section class="gallery">
+      <h1>Our Gallery</h1>
+      <p>
+        Welcome to the Janan Schools Gallery, a visual showcase of our vibrant school community.<br>Here, 
+            we celebrate the moments that define learning, growth, and achievement across our campuses.
+      </p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="gallery11.jpg" alt="" />
+          </div>
+
+        <div class="campus-col">
+          <img src="gallery12.jpg" alt="" />
+         </div>
+         
+        <div class="campus-col">
+          <img src="gallery13.jpg" alt="" />
+          </div>
+
+          <div class="campus-col">
+          <img src="gallery1.jpg" alt="" />
+          </div>
+
+        <div class="campus-col">
+          <img src="gallery2.jpg" alt="" />
+         </div>
+         
+        <div class="campus-col">
+          <img src="gallery3.jpg" alt="" />
+          </div>
+
+          <div class="campus-col">
+          <img src="gallery4.jpg" alt="" />
+          </div>
+
+        <div class="campus-col">
+          <img src="gallery5.jpg" alt="" />
+         </div>
+         
+        <div class="campus-col">
+          <img src="gallery6.jpg" alt="" />
+          </div>
+
+          <div class="campus-col">
+          <img src="gallery7.jpg" alt="" />
+          </div>
+
+        <div class="campus-col">
+          <img src="gallery8.png" alt="" />
+         </div>
+         
+        <div class="campus-col">
+          <img src="gallery9.jpg" alt="" />
+          </div>
+      </div>
+    </section>
+
+    
+    <script>
+const items = document.querySelectorAll('.gallery .campus-col');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      
+      const allItems = [...items];
+      allItems.forEach((el, index) => {
+        setTimeout(() => {
+          el.classList.add('show');
+        }, index * 120); // 👈 controls stagger speed
+      });
+
+      observer.disconnect(); // run once only
+    }
+  });
+}, { threshold: 0.15 });
+
+items.forEach(item => {
+  item.classList.add('hidden');
+  observer.observe(item);
+});
+</script>
+
+
+        <!-- ----------footer---------------- -->
+
+    <footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- ABOUT SECTION -->
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>
+        Janan Schools is a privately owned family of institutions, comprising two primary schools and two secondary schools, founded in 2003.
+      </p>
+      <p>
+        Our schools draw inspiration from a strong religious foundation and are proudly named in honor of Archbishop Janani Jakaliya Luwum,
+        who served as Archbishop of the Church of Uganda from 1974 to 1977.
+      </p>
+    </div>
+
+    <!-- NAVIGATION LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    <p>© 2026 St. Janan Luwum Secondary School - Kabalagala. All Rights Reserved.</p>
+  </div>
+
+</footer>
+    
+    
+
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

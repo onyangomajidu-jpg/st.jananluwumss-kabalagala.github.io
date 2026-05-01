@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St. Janan Luwum S.S - Kabalagala | Contact Us</title>
+<link rel="icon" href="C:\Users\AbdulMajidu\Desktop\College-Website-main/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="sub-header">
+  <nav>
+    <a href="home.html">
+      <img src="C:\Users\AbdulMajidu\Desktop\College-Website-main/college_logo.png" alt="School Logo">
+    </a>
+
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="academics.html">ACADEMICS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Contact Us</h1>
+</header>
+
+<!-- MAP -->
+<section class="location">
+  <iframe
+    src="https://www.google.com/maps?q=St%20Janan%20Luwum%20Secondary%20School,%20Kampala&output=embed"
+    width="100%"
+    height="450"
+    style="border:0;"
+    loading="lazy">
+  </iframe>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+
+  <!-- CONTACT INFO -->
+  <div class="contact-info">
+
+    <div class="info-box">
+      <i class="fa fa-home"></i>
+      <div>
+        <h3>Kabalagala Branch</h3>
+        <p>Bombo Branch, Wobulenzi Branch<br>2nd Floor, New York Building</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <i class="fa fa-phone"></i>
+      <div>
+        <h3>+256 779 930 943</h3>
+        <p>Call us for inquiries</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <i class="fa fa-envelope"></i>
+      <div>
+        <h3>info@jananschools.com</h3>
+        <p>Email us for support</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTACT FORM -->
+  <div class="contact-form">
+    <form id="remarks-form">
+
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <input type="text" id="subject" placeholder="Subject">
+
+      <textarea id="remark" placeholder="Write your message..." rows="6" required></textarea>
+
+      <button type="submit" class="hero-btn red-btn">Send Message</button>
+    </form>
+
+    <p id="success-message" style="display:none; color:green; margin-top:10px;">
+      Thank you! Your message has been submitted successfully.
+    </p>
+  </div>
+
+</section>
+
+<!-- SCRIPT -->
+<script>
+document.getElementById("remarks-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const remark = document.getElementById("remark").value.trim();
+
+  const remarks = JSON.parse(localStorage.getItem("visitorRemarks")) || [];
+
+  remarks.push({
+    name,
+    email,
+    remark,
+    date: new Date().toLocaleString()
+  });
+
+  localStorage.setItem("visitorRemarks", JSON.stringify(remarks));
+
+  document.getElementById("success-message").style.display = "block";
+  this.reset();
+});
+</script>
+
+</body>
+</html>
+</script>
+
+    <!-- ----------footer---------------- -->
+
+    <footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- ABOUT SECTION -->
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>
+        Janan Schools is a privately owned family of institutions, comprising two primary schools and two secondary schools, founded in 2003.
+      </p>
+      <p>
+        Our schools draw inspiration from a strong religious foundation and are proudly named in honor of Archbishop Janani Jakaliya Luwum,
+        who served as Archbishop of the Church of Uganda from 1974 to 1977.
+      </p>
+    </div>
+
+    <!-- NAVIGATION LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    <p>© 2026 St. Janan Luwum Secondary School - Kabalagala. All Rights Reserved.</p>
+  </div>
+
+</footer>
+    
+
+</body>
+</html>

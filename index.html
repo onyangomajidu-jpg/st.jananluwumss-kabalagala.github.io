@@ -1,0 +1,275 @@
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St.Janan Luwum S.S-Kabalagala</title>
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+      </head>
+  <body>
+   <section class="header">
+  <nav>
+    <a href="home.html" class="logo">
+      <img src="college_logo.png" alt="College Logo" />
+    </a>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="academics.html">ACADEMICS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+       <body class="janan-home">
+              <div class="text-box">
+        <h1>ST. JANAN LUWUM S.S-KABALAGALA</h1>
+        <p> Welcome to Janan Schools <br>
+          Where Vision is shaped, character is built and excellence becomes tradition.
+        </p>
+        <a href="" class="hero-btn">Visit Us To know More</a>
+      </div>
+    </section>
+
+    <!-- -------course--------- -->
+    <section class="course">
+      <h1>Admission Available</h1>
+      <div class="course-intro">
+        <p>
+          Explore our Admission pro designed to nurture
+          your passion for technology and equip you with the skills to shape the
+          future.
+        </p> 
+      </div>
+      <div class="row">
+        <div class="course-col">
+          <h3>(UACE) A-LEVEL </h3>
+          <p>
+            UACE A-Level curriculum is implemented through organized teaching, continuous assessment, 
+            practical learning, research, and strong exam preparation. Schools closely monitor performance, 
+            enforce discipline, use modern learning methods, and equip students with both high grades and 
+            real-life skills for university and careers.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>(UCE) O-LEVEL</h3>
+          <p>
+            Structured academic pathways in Arts and Sciences, integrating research, innovation, continuous assessment, 
+            practical learning, digital literacy, critical thinking, and competency-based instruction to build strong 
+            academic foundations, creativity, and readiness for advanced studies.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>PRIMARY SECTION</h3>
+          <p>
+            Early Childhood Development: Play-based learning to develop literacy, numeracy, creativity, and social interaction.<br><br>
+            Primary Education: Strong emphasis on core subjects-English, Mathematics, Science, Social Studies, Religious Education, and Local Language.
+          </p> 
+        </div>
+      </div>
+    </section>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const courseSection = document.querySelector(".course");
+
+  if (!courseSection) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        courseSection.classList.add("course-animate");
+      }
+    });
+  }, {
+    threshold: 0.25
+  });
+
+  observer.observe(courseSection);
+});
+</script>
+
+<section class="campus">
+  <div class="campus-header">
+    <h1>Our Global Campus</h1>
+    <p>
+      We offer a wide range of opportunities for students to explore their interests and develop their skills.
+    </p>
+  </div>
+
+  <div class="campus-grid">
+    <div class="campus-card">
+      <img src="campus1.jpg" alt="" />
+      <div class="overlay">
+        <h3>BOMBO</h3>
+      </div>
+    </div>
+
+    <div class="campus-card">
+      <img src="campus2.jpg" alt="" />
+      <div class="overlay">
+        <h3>KABALAGALA</h3>
+      </div>
+    </div>
+
+    <div class="campus-card">
+      <img src="campus3.jpg" alt="" />
+      <div class="overlay">
+        <h3>BOMBO PRIMARY</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- --------------facilities---------------- -->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <div class="facilities-intro">
+        <p>
+         At Janan Schools, education goes beyond the classroom. We are devoted to the holistic 
+        development of every learner-academically, socially, emotionally, and physically. 
+        Our goal is to raise confident, disciplined, and compassionate individuals who are ready to thrive in a dynamic world.
+        </p> <br> <br>
+      </div>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="facilities1.jpg" alt="" />
+          <h3>Vocational Education</h3>
+          <p>
+            Janan Schools is a true one-stop center for holistic education-where academic excellence meets real-world skills 
+            and lifelong empowerment.
+            Our vocational programs provide practical, hands-on training that equips learners with valuable skills for 
+            self-reliance and innovation.
+            We offer courses in bakery, electrical installation, plumbing, modern agriculture, tailoring, computer repair, welding, hairdressing, 
+            and media production, including TV and radio presentation..
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="facilities2.jpg" alt="" />
+          <h3>Co-Curricular & Extra-Curricular Activities</h3>
+          <p>
+            At Janan Schools, learning goes beyond the classroom. Our wide range of activities nurtures talent, 
+            discipline, and teamwork while shaping confident, creative, and well-rounded learners.
+            Sports: Students enjoy a vibrant sporting culture featuring football, netball, badminton, 
+            tennis (lawn and table), basketball, volleyball, woodball, athletics, swimming, chess, scrabble, and dancesport.
+          </p>
+        </div>
+
+        <div class="facilities-col">
+          <img src="facilities3.jpg" alt="" />
+          <h3>Modern Learning Facilities</h3>
+          <p>
+            At Janan Schools, we believe that a well-designed environment shapes a student’s educational journey.
+            Our modern science and ICT laboratories, e-learning research labs, and digital library provide 
+            hands-on learning and easy access to knowledge. Spacious, well-ventilated classrooms equipped with 
+            smart projectors enhance visual teaching, ensuring comfort, innovation, and academic excellence for every learner.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------testimonials-------------- -->
+
+    <div class="row">
+      <h1>What Our Students Say</h1>
+      
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="student1.jpg" alt="" />
+          <div>
+            <p>
+              "“The teachers are very supportive and always encourage us to do our best.
+               I enjoy learning here because classes are interactive and interesting."
+               
+            </p>
+            <h3>Maria Anitah</h3>
+            
+          </div>
+        </div>
+
+        <div class="testimonial-col">
+          <img src="student2.png" alt="" />
+          <div>
+            <p>
+              “The school environment is safe, clean, and welcoming.
+              I have made great friends and learned valuable life skills.”
+            </p>
+            <h3>Elsie .A.</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------call to action----------- -->
+
+    <section class="cta">
+      <h1>
+        Apply Now <br />
+        Admissions are open with limited slots Available!
+      </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- ----------footer---------------- -->
+
+    <footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- ABOUT SECTION -->
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>
+        Janan Schools is a privately owned family of institutions, comprising two primary schools and two secondary schools, founded in 2003.
+      </p>
+      <p>
+        Our schools draw inspiration from a strong religious foundation and are proudly named in honor of Archbishop Janani Jakaliya Luwum,
+        who served as Archbishop of the Church of Uganda from 1974 to 1977.
+      </p>
+    </div>
+
+    <!-- NAVIGATION LINKS -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    <p>© 2026 St. Janan Luwum Secondary School - Kabalagala. All Rights Reserved.</p>
+  </div>
+
+</footer>
+    
+      
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
