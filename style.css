@@ -6,8 +6,9 @@
 .header {
   min-height: 100vh;
   width: 100%;
+  /* Using a single dark color at two different opacities */
   background-image: 
-    linear-gradient(rgba(7, 7, 7, 0.877), rgba(9, 22, 78, 0.815)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("bg1.jpeg");
   background-position: center;
   background-size: cover;
@@ -18,7 +19,7 @@ nav {
   padding: 0% 6%;
   justify-content: space-between;
   align-items: center;
-  background: #0b2c4d;
+  background: #2702ad;
 }
 
 nav img {
@@ -167,7 +168,7 @@ nav .fa {
   position: absolute;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgb(3, 3, 148);
 }
 
 .header .logo img {
@@ -804,7 +805,7 @@ html, body {
 
 
 .footer {
-  background: #0f172a;
+  background: #8b1000;
   color: #ffffff;
   padding: 50px 20px 20px;
   margin-top: 60px;
@@ -1376,4 +1377,155 @@ body {
   .sub-header h1 {
     font-size: 28px;
   }
+}
+
+/* ============================= */
+/* GLOBAL RESPONSIVE FIX */
+/* ============================= */
+
+/* Prevent horizontal scroll */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all sections fit perfectly */
+section, div {
+  max-width: 100%;
+}
+
+/* Images fix */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix rows spacing */
+.row {
+  width: 100%;
+  margin: 0;
+  gap: 20px;
+}
+
+/* Fix common containers */
+.course,
+.facilities,
+.testimonial,
+.cta,
+.about-us,
+.location {
+  width: 100% !important;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+
+/* Remove extra spacing */
+h1, h2, h3, p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ============================= */
+/* NAV FIX */
+/* ============================= */
+nav {
+  flex-wrap: wrap;
+}
+
+.nav-links ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ============================= */
+/* MOBILE (≤768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* Fix header text overflow */
+  .text-box {
+    width: 95%;
+    top: 55%;
+  }
+
+  .text-box h1 {
+    font-size: 28px;
+  }
+
+  .text-box p {
+    font-size: 14px;
+  }
+
+  /* Stack all flex rows */
+  .row {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  /* Cards full width */
+  .course-col,
+  .facilities-col,
+  .testimonial-col {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  /* Fix campus & gallery grids */
+  .campus-grid,
+  .gallery .row {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer fix */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Remove side overflow */
+  .contact-section {
+    padding: 30px 5%;
+  }
+
+}
+
+/* ============================= */
+/* TABLET (769px–1024px) */
+/* ============================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .course-col,
+  .facilities-col,
+  .testimonial-col {
+    flex-basis: 45% !important;
+  }
+
+  .campus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ============================= */
+/* LARGE SCREENS FIX */
+/* ============================= */
+@media (min-width: 1200px) {
+
+  .course,
+  .facilities,
+  .testimonial,
+  .about-us,
+  .location {
+    max-width: 1200px;
+    margin: auto;
+  }
+
 }
